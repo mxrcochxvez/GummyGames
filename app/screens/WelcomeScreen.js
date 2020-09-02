@@ -9,9 +9,9 @@ export default function WelcomeScreen({ navigation }) {
         <ImageBackground source={gummy} style={styles.image}>
             <Text style={styles.brand}>Gummy Games!</Text>
             <View style={styles.buttonContainer}>
-                <Button 
-                    title="Click here to Play!" 
-                    color={colors.white} 
+                <Button
+                    title="Click here to Play!"
+                    color={colors.black}
                     onPress={() => {
                         navigation.navigate('Home')
                     }}
@@ -28,8 +28,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     buttonContainer: {
-      backgroundColor: colors.secondary,
-      borderRadius: 15
+        backgroundColor: colors.white,
+        borderRadius: 15
     },
     image: {
         flex: 1,
